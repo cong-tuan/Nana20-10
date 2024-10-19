@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fbe4e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('background.jpg'); /* Thêm hình nền */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Thêm độ trong suốt */
+    padding: 40px; /* Tăng padding để tạo khoảng cách */
+    border-radius: 15px; /* Tăng border-radius để làm mềm các góc */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s; /* Thêm hiệu ứng fade-in */
+    max-width: 600px; /* Giới hạn chiều rộng của container */
+    margin: 20px; /* Thêm margin để tạo khoảng cách với các cạnh */
+    overflow-y: auto; /* Cho phép cuộn nội dung theo chiều dọc */
+    max-height: 90vh; /* Giới hạn chiều cao của container */
+}
+
+h1 {
+    color: #ff69b4;
+    font-size: 2.5em; /* Tăng kích thước chữ */
+    animation: bounce 1s infinite; /* Thêm hiệu ứng bounce */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới */
+    display: block; /* Đảm bảo h1 được hiển thị */
+}
+
+p {
+    font-size: 1.2em; /* Tăng kích thước chữ cho đoạn văn */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới */
+}
+
+button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Thêm hiệu ứng chuyển màu */
+    margin-top: 20px; /* Thêm khoảng cách trên */
+}
+
+button:hover {
+    background-color: #ff85c0;
+}
+
+#message {
+    margin-top: 20px;
+    margin-bottom: 40px; /* Thêm khoảng cách dưới để cách top của img */
+    font-size: 18px;
+    color: #ff69b4;
+    position: relative;
+}
+
+.small-video {
+    max-width: 60%; /* Chỉnh kích thước video nhỏ lại */
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+img.small-image {
+    max-width: 70%; /* Chỉnh kích thước hình ảnh nhỏ lại */
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+/* Thêm hiệu ứng fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Thêm hiệu ứng bounce */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
